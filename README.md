@@ -1,6 +1,6 @@
 # Syphar — Portfolio
 
-Personal portfolio of **Md Shahabuddin**, a Full Stack Developer building production web and Android apps with React, React Native and Node.js.
+Personal portfolio of **Md Shahabuddin**, a Full Stack Developer building production web and Android apps with React, TypeScript, React Native, Node.js and Java Spring Boot.
 
 **Live:** [shahabuddin.in](https://shahabuddin.in)
 

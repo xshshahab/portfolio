@@ -11,9 +11,10 @@ export default function Education() {
           <span className="shrink-0 font-mono text-xs text-zinc-400">{education.years}</span>
         </div>
         <p className="text-sm leading-6 text-zinc-600">{education.school}</p>
-        <span className="mt-1 font-mono text-xs text-zinc-400">
+        <span className="mt-1 font-mono text-xs leading-5 text-zinc-400">
           {education.detail} · Languages: {education.languages}
         </span>
+        <span className="font-mono text-xs leading-5 text-zinc-400">Interests: {education.interests}</span>
       </div>
     </section>
   )

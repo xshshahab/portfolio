@@ -2,25 +2,28 @@ import {
   SiReact,
   SiRedux,
   SiExpo,
-  SiNodedotjs,
   SiJsonwebtokens,
   SiJest,
   SiDocker,
   SiClaude,
   SiPython,
   SiGithub,
+  SiJavascript,
+  SiSpringboot,
+  SiPostgresql,
+  SiSwagger,
 } from 'react-icons/si'
 import { FaLinkedinIn } from 'react-icons/fa6'
-import { LuMail } from 'react-icons/lu'
+import { LuListChecks, LuMail } from 'react-icons/lu'
 
 export const GITHUB_USER = 'xshshahab'
 
 export const profile = {
   name: 'Md Shahabuddin',
   navName: 'Syphar',
-  role: 'Full Stack Developer | React.js, React Native, Node.js',
-  bio: 'Full Stack Developer from Patna, India with ~2 years of experience shipping production web and Android apps. I own features end to end, from requirements and UI prototypes to REST API integration, testing and release.',
-  location: 'Patna, Bihar, India',
+  role: 'Full Stack Developer | React.js, TypeScript, Node.js, Java, Spring Boot, React Native',
+  bio: 'Full Stack Developer based in Gurgaon, India with ~2 years of experience building production web and Android apps with React, TypeScript and React Native, and backends with Node.js and Java Spring Boot. I own features end to end, from requirements and Figma prototypes to API development, testing and release.',
+  location: 'Gurgaon, Haryana, India',
   email: 'work.mdshahabuddin@gmail.com',
   // Falls back to the GitHub avatar. Drop a file at public/avatar.jpg and set this to '/avatar.jpg' to use your own photo.
   avatar: `https://github.com/${GITHUB_USER}.png?size=256`,
@@ -50,20 +53,41 @@ export const companies = [
     status: 'current',
     projects: [
       {
-        name: 'Hurry2Shop — Android App',
-        date: 'Sep 2026 – Present',
+        name: 'Hurry2Shop — Admin Console',
+        date: 'May 2026 – Oct 2026',
         description:
-          "E-commerce app for a women's ethnic-wear brand: browsing, search and filters, wishlist, cart, checkout and orders. OTP login with JWT, in-app Razorpay payments, and EAS release builds published on Google Play.",
-        tech: ['React Native', 'Expo', 'TypeScript', 'TanStack Query', 'Redux', 'Razorpay'],
+          'Internal admin app I built end to end: a React + Shadcn UI frontend with dashboard charts, and a Java Spring Boot backend with 19 REST endpoints across 4 controllers (campaigns, support inquiries, cart), Hibernate/JPA and PostgreSQL, documented in Swagger UI.',
+        tech: [
+          'React.js',
+          'TypeScript',
+          'Shadcn UI',
+          'Redux Toolkit',
+          'TanStack Query',
+          'Recharts',
+          'Java',
+          'Spring Boot',
+          'Hibernate / JPA',
+          'PostgreSQL',
+          'Swagger UI',
+          'Log4j',
+        ],
+        domain: 'internal — no public URL',
+      },
+      {
+        name: 'Hurry2Shop — Android App',
+        date: 'Sep 2026 – Oct 2026',
+        description:
+          "Production e-commerce app for a women's ethnic-wear brand: browsing, search and filters, wishlist, cart, checkout and orders. OTP login with JWT, in-app Razorpay payments, and EAS release builds published on Google Play.",
+        tech: ['React Native', 'Expo', 'EAS Build', 'TypeScript', 'TanStack Query', 'Redux', 'Razorpay'],
         href: 'https://play.google.com/store/apps/details?id=com.hurry2shop.app',
         domain: 'play.google.com',
       },
       {
         name: 'Hurry2Shop — Web Platform',
-        date: 'Apr 2026 – Present',
+        date: 'Apr 2026 – Oct 2026',
         description:
-          "B2C women's fashion e-commerce frontend with search and filtering, wishlist, cart, Razorpay checkout and OTP + JWT auth. Containerized with Docker and live in production on a VPS since August 2026.",
-        tech: ['React.js', 'TypeScript', 'TanStack Query', 'Redux', 'Tailwind CSS', 'Docker'],
+          "Customer-facing frontend of a B2C women's fashion platform, built with teammates: search and filtering, wishlist, cart, Razorpay checkout, orders and mobile-first layouts. Dockerized and live in production on a VPS since August 2026.",
+        tech: ['React.js', 'TypeScript', 'TanStack Query', 'Redux', 'Tailwind CSS', 'Razorpay', 'Docker'],
         href: 'https://hurry2shop.com',
         domain: 'hurry2shop.com',
       },
@@ -71,14 +95,14 @@ export const companies = [
         name: 'WISE BI — Revenue Assurance Platform',
         date: 'May 2025 – Present',
         description:
-          'Business Intelligence platform that helps telecom operators monitor and validate revenue data through interactive dashboards, customizable reports and user management. Built with a 12-member team.',
+          'Business Intelligence platform that helps telecom operators monitor and validate revenue data through interactive dashboards, data visualization, customizable reports and user management. Built in a 12-member Agile team.',
         tech: ['React.js', 'TypeScript', 'Zustand', 'TanStack Query', 'Jest', 'Figma'],
       },
       {
         name: 'Viba Insurance — Management Platform',
         date: 'Oct 2025 – Nov 2025',
         description:
-          'Centralized dashboard for managing employee insurance policies, records and renewals — from requirements and UI prototypes to the finished frontend.',
+          'Centralized admin dashboard for managing employee insurance policies, records and renewals — from requirements and UI prototypes to the finished frontend.',
         tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
       },
     ],
@@ -93,7 +117,7 @@ export const companies = [
         name: 'Tajweed — Accreditation Management (NCAAA, ABET)',
         date: 'Aug 2024 – Jan 2025',
         description:
-          'Accreditation system for Saudi higher-education institutions covering programs, learning outcomes, assessments, evidence documentation and reports.',
+          'Accreditation system for Saudi higher-education institutions covering programs, learning outcomes, assessments, evidence documentation and reports. Also debugged UI and integration issues across modules to keep releases stable.',
         tech: ['React.js', 'TypeScript', 'Redux', 'Tailwind CSS'],
       },
     ],
@@ -106,10 +130,10 @@ export const companies = [
     projects: [
       {
         name: 'SypharConnect — MERN Job Portal',
-        date: 'Oct 2026',
+        date: 'Oct 2025',
         description:
           'Job portal with 20+ REST endpoints, JWT cookie auth and role-based access. Multi-filter search, saved and applied jobs, and a recruiter dashboard with a server-sanitised rich-text editor. Deployed behind Nginx with HTTPS and PM2.',
-        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'JWT', 'Nginx'],
+        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'Shadcn UI', 'JWT', 'Nginx', 'PM2'],
         href: 'https://jobs.shahabuddin.in',
         domain: 'jobs.shahabuddin.in',
         secondaryHref: 'https://github.com/xshshahab/syphar-connect',
@@ -122,33 +146,53 @@ export const companies = [
 // "Courses" slot -> skills
 export const skills = [
   {
+    icon: SiJavascript,
+    title: 'Languages',
+    description: 'JavaScript (ES6+), TypeScript, Java, SQL, HTML5 and CSS3.',
+    meta: 'JavaScript · TypeScript · Java · SQL',
+  },
+  {
     icon: SiReact,
     title: 'Frontend',
-    description: 'React.js, Hooks, React Router, Tailwind CSS, Shadcn UI and responsive design.',
-    meta: 'JavaScript · TypeScript · HTML5 · CSS3',
+    description:
+      'React.js, Hooks, React Router, Tailwind CSS, Shadcn UI, Recharts for data visualization, and component-based SPAs with responsive design.',
+    meta: 'React · Tailwind · Shadcn UI · Recharts',
   },
   {
     icon: SiRedux,
     title: 'State & Data Fetching',
-    description: 'Redux Toolkit, Zustand and TanStack Query for client and server state.',
-    meta: 'React Hook Form · Zod',
+    description: 'Redux Toolkit, Zustand and TanStack Query for client and server state, with React Hook Form and Zod.',
+    meta: 'Redux Toolkit · Zustand · TanStack Query',
   },
   {
     icon: SiExpo,
     title: 'Mobile',
     description: 'React Native with Expo, EAS Build, React Navigation and Google Play Console releases.',
-    meta: 'React Native · Android',
+    meta: 'React Native · Expo · Android',
   },
   {
-    icon: SiNodedotjs,
-    title: 'Backend & Database',
-    description: 'Node.js and Express.js REST APIs backed by MongoDB.',
-    meta: 'Node.js · Express · MongoDB',
+    icon: SiSpringboot,
+    title: 'Backend',
+    description:
+      'Java Spring Boot with Hibernate / JPA, and Node.js with Express.js. RESTful APIs in a layered controller–service–repository architecture.',
+    meta: 'Spring Boot · Node.js · Express · REST',
+  },
+  {
+    icon: SiPostgresql,
+    title: 'Databases',
+    description: 'PostgreSQL and MongoDB, with SQL for querying and modelling data.',
+    meta: 'PostgreSQL · MongoDB · SQL',
+  },
+  {
+    icon: SiSwagger,
+    title: 'API Docs & Logging',
+    description: 'Documenting and testing every endpoint with Swagger UI (OpenAPI), and Log4j logging for debugging and tracing.',
+    meta: 'Swagger UI · OpenAPI · Log4j',
   },
   {
     icon: SiJsonwebtokens,
     title: 'Auth & Payments',
-    description: 'JWT and OTP authentication, role-based access control and Razorpay checkout.',
+    description: 'JWT and OTP authentication, role-based access control and the Razorpay payment gateway.',
     meta: 'JWT · OTP · RBAC · Razorpay',
   },
   {
@@ -160,7 +204,7 @@ export const skills = [
   {
     icon: SiDocker,
     title: 'DevOps & Tools',
-    description: "Docker, Nginx, PM2, Let's Encrypt HTTPS and VPS deployment on Linux, with Git, Jira and Figma.",
+    description: "Docker, Nginx, PM2, Let's Encrypt HTTPS and VPS deployment on Linux, with Git, Bitbucket, Jira and Figma.",
     meta: 'Docker · Nginx · Linux',
   },
   {
@@ -169,6 +213,12 @@ export const skills = [
     description:
       'Using Claude Code and Google Antigravity for debugging and refactoring while owning architecture and implementation.',
     meta: 'Claude Code · Google Antigravity',
+  },
+  {
+    icon: LuListChecks,
+    title: 'Practices',
+    description: 'Agile teams, requirement gathering, UI prototyping, API integration, and debugging and bug fixing.',
+    meta: 'Agile · Jira · Figma',
   },
 ]
 
@@ -189,6 +239,7 @@ export const education = {
   years: '2022 – 2025',
   detail: 'Percentage: 76%',
   languages: 'English, Hindi',
+  interests: 'Bike Riding, Watching Movies, Learning New Skills, Travelling',
 }
 
 // What's new feed, newest first. Add a line here to show it on the home page and /new.
@@ -209,12 +260,11 @@ export const updates = [
   {
     date: 'Oct 2026',
     tag: 'Shipped',
-    title: 'Deployed SypharConnect, a MERN job portal',
-    summary: 'Live on a Linux VPS behind Nginx with HTTPS, PM2 and a password-protected MongoDB.',
-    href: 'https://jobs.shahabuddin.in',
+    title: 'Built the Hurry2Shop Admin Console, full stack',
+    summary: 'React + Shadcn UI frontend and 19 Java Spring Boot REST endpoints on PostgreSQL, documented in Swagger UI.',
   },
   {
-    date: 'Sep 2026',
+    date: 'Sep – Oct 2026',
     tag: 'Shipped',
     title: 'Hurry2Shop Android app on Google Play',
     summary: 'Built with React Native (Expo), released with EAS Build and a Google Play listing.',
@@ -226,5 +276,12 @@ export const updates = [
     title: 'Hurry2Shop web platform live in production',
     summary: 'Dockerized React frontend running on a VPS with Razorpay checkout and OTP + JWT auth.',
     href: 'https://hurry2shop.com',
+  },
+  {
+    date: 'Oct 2025',
+    tag: 'Shipped',
+    title: 'Deployed SypharConnect, a MERN job portal',
+    summary: 'Live on a Linux VPS behind Nginx with HTTPS, PM2 and a password-protected MongoDB.',
+    href: 'https://jobs.shahabuddin.in',
   },
 ]
