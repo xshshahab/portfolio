@@ -7,7 +7,8 @@ export default function New() {
   useEffect(() => {
     document.title = `What's new — ${profile.name}`
     return () => {
-      document.title = `${profile.name} — Full Stack Developer`
+      document.title =
+        'Md Shahabuddin | Full Stack Developer at CODECOMPASS | React.js, TypeScript, Java, Spring Boot, Python (FastAPI), React Native (Expo)'
     }
   }, [])
 

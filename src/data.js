@@ -21,8 +21,8 @@ export const GITHUB_USER = 'xshshahab'
 export const profile = {
   name: 'Md Shahabuddin',
   navName: 'Syphar',
-  role: 'Full Stack Developer | React.js, TypeScript, Node.js, Java, Spring Boot, React Native',
-  bio: 'Full Stack Developer based in Gurgaon, India with ~2 years of experience building production web and Android apps with React, TypeScript and React Native, and backends with Node.js and Java Spring Boot. I own features end to end, from requirements and Figma prototypes to API development, testing and release.',
+  role: 'Full Stack Developer | React.js, TypeScript, Java, Spring Boot, Python (FastAPI), React Native',
+  bio: 'Full Stack Developer based in Gurgaon, India with ~2 years of experience building production web and Android apps with React, TypeScript and React Native, and backends with Java Spring Boot and Python (FastAPI). I own features end to end, from requirements and Figma prototypes to API development, testing and release.',
   location: 'Gurgaon, Haryana, India',
   email: 'work.mdshahabuddin@gmail.com',
   // Falls back to the GitHub avatar. Drop a file at public/avatar.jpg and set this to '/avatar.jpg' to use your own photo.
@@ -129,11 +129,11 @@ export const companies = [
     status: 'personal',
     projects: [
       {
-        name: 'SypharConnect — MERN Job Portal',
-        date: 'Oct 2025',
+        name: 'SypharConnect — Full Stack Job Portal',
+        date: 'Oct – Nov 2026',
         description:
-          'Job portal with 20+ REST endpoints, JWT cookie auth and role-based access. Multi-filter search, saved and applied jobs, and a recruiter dashboard with a server-sanitised rich-text editor. Deployed behind Nginx with HTTPS and PM2.',
-        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'Shadcn UI', 'JWT', 'Nginx', 'PM2'],
+          'Job portal with 22 REST endpoints on FastAPI and PostgreSQL, JWT cookie auth and role-based access. Multi-filter search, saved and applied jobs, and a recruiter dashboard with a server-sanitised rich-text editor. Backed by 15 end-to-end tests and deployed behind Nginx with HTTPS and systemd.',
+        tech: ['Python', 'FastAPI', 'PostgreSQL', 'React.js', 'TypeScript', 'Redux Toolkit', 'Shadcn UI', 'JWT', 'Nginx', 'systemd'],
         href: 'https://jobs.shahabuddin.in',
         domain: 'jobs.shahabuddin.in',
         secondaryHref: 'https://github.com/xshshahab/syphar-connect',
@@ -148,8 +148,8 @@ export const skills = [
   {
     icon: SiJavascript,
     title: 'Languages',
-    description: 'JavaScript (ES6+), TypeScript, Java, SQL, HTML5 and CSS3.',
-    meta: 'JavaScript · TypeScript · Java · SQL',
+    description: 'JavaScript (ES6+), TypeScript, Java, Python, SQL, HTML5 and CSS3.',
+    meta: 'JavaScript · TypeScript · Java · Python · SQL',
   },
   {
     icon: SiReact,
@@ -174,14 +174,14 @@ export const skills = [
     icon: SiSpringboot,
     title: 'Backend',
     description:
-      'Java Spring Boot with Hibernate / JPA, and Node.js with Express.js. RESTful APIs in a layered controller–service–repository architecture.',
-    meta: 'Spring Boot · Node.js · Express · REST',
+      'Java Spring Boot with Hibernate / JPA, and Python with FastAPI and SQLAlchemy. RESTful APIs in a layered controller–service–repository architecture.',
+    meta: 'Spring Boot · FastAPI · Python · REST',
   },
   {
     icon: SiPostgresql,
     title: 'Databases',
-    description: 'PostgreSQL and MongoDB, with SQL for querying and modelling data.',
-    meta: 'PostgreSQL · MongoDB · SQL',
+    description: 'PostgreSQL, with SQL for querying and modelling data, and Alembic migrations.',
+    meta: 'PostgreSQL · SQL · Alembic',
   },
   {
     icon: SiSwagger,
@@ -198,13 +198,13 @@ export const skills = [
   {
     icon: SiJest,
     title: 'Testing & Debugging',
-    description: 'Jest, React Testing Library, Vitest, MSW, Postman, Chrome DevTools, React Profiler and Lighthouse.',
+    description: 'Jest, React Testing Library, Vitest, MSW, pytest, Postman, Chrome DevTools, React Profiler and Lighthouse.',
     meta: 'Jest · Vitest · MSW',
   },
   {
     icon: SiDocker,
     title: 'DevOps & Tools',
-    description: "Docker, Nginx, PM2, Let's Encrypt HTTPS and VPS deployment on Linux, with Git, Bitbucket, Jira and Figma.",
+    description: "Docker, Nginx, systemd, Let's Encrypt HTTPS and VPS deployment on Linux, with Git, Bitbucket, Jira and Figma.",
     meta: 'Docker · Nginx · Linux',
   },
   {
@@ -228,7 +228,7 @@ export const learning = [
     icon: SiPython,
     title: 'Python for AI Engineering',
     description:
-      'Learning Python as the foundation for AI engineering — adding it to my JavaScript and TypeScript toolkit to build AI-powered applications.',
+      'Learning Python as the foundation for AI engineering — adding it to my JavaScript and TypeScript toolkit to build AI-powered applications. Applied so far in SypharConnect, a job portal with a FastAPI and PostgreSQL back end.',
     since: 'Started Oct 2026',
   },
 ]
@@ -246,11 +246,18 @@ export const education = {
 export const currentlyLearning = {
   title: 'AI Engineering',
   description:
-    'I have started learning AI Engineering — building on my full-stack foundation in React, Node.js and TypeScript to go from shipping apps to shipping AI-powered ones.',
+    'I have started learning AI Engineering — building on my full-stack foundation in React, TypeScript and Python (FastAPI) to go from shipping apps to shipping AI-powered ones.',
   since: 'Started Oct 2026',
 }
 
 export const updates = [
+  {
+    date: 'Oct – Nov 2026',
+    tag: 'Shipped',
+    title: 'Deployed SypharConnect, a FastAPI job portal',
+    summary: 'Live on a Linux VPS behind Nginx with HTTPS, a systemd-managed FastAPI back end, PostgreSQL and nightly backups.',
+    href: 'https://jobs.shahabuddin.in',
+  },
   {
     date: 'Oct 2026',
     tag: 'Learning',
@@ -276,12 +283,5 @@ export const updates = [
     title: 'Hurry2Shop web platform live in production',
     summary: 'Dockerized React frontend running on a VPS with Razorpay checkout and OTP + JWT auth.',
     href: 'https://hurry2shop.com',
-  },
-  {
-    date: 'Oct 2025',
-    tag: 'Shipped',
-    title: 'Deployed SypharConnect, a MERN job portal',
-    summary: 'Live on a Linux VPS behind Nginx with HTTPS, PM2 and a password-protected MongoDB.',
-    href: 'https://jobs.shahabuddin.in',
   },
 ]
