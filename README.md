@@ -1,10 +1,8 @@
 # Syphar — Portfolio
 
-Personal portfolio of **Md Shahabuddin**, a Full Stack Developer building production web and Android apps with React, TypeScript, React Native, Java Spring Boot and Python (FastAPI).
+Personal portfolio of **Md Shahabuddin**, an Agentic AI Engineer building Generative AI, LLM applications, agentic workflows, and production web and mobile products with Python, FastAPI, LangGraph, LangChain, MCP, RAG, React, TypeScript, React Native, and Java Spring Boot.
 
 **Live:** [shahabuddin.in](https://shahabuddin.in)
-
-![Portfolio screenshot (dark mode)](docs/screenshot.png)
 
 ## Features
 

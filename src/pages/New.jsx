@@ -5,10 +5,10 @@ import { currentlyLearning, profile } from '../data'
 
 export default function New() {
   useEffect(() => {
+    const previousTitle = document.title
     document.title = `What's new — ${profile.name}`
     return () => {
-      document.title =
-        'Md Shahabuddin | Full Stack Developer at CODECOMPASS | React.js, TypeScript, Java, Spring Boot, Python (FastAPI), React Native (Expo)'
+      document.title = previousTitle
     }
   }, [])
 

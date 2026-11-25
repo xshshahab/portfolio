@@ -1,28 +1,21 @@
 import {
   SiReact,
-  SiRedux,
-  SiExpo,
-  SiJsonwebtokens,
-  SiJest,
   SiDocker,
-  SiClaude,
-  SiPython,
   SiGithub,
-  SiJavascript,
-  SiSpringboot,
-  SiPostgresql,
-  SiSwagger,
+  SiFastapi,
+  SiLangchain,
+  SiGooglegemini,
 } from 'react-icons/si'
 import { FaLinkedinIn } from 'react-icons/fa6'
-import { LuListChecks, LuMail } from 'react-icons/lu'
+import { LuActivity, LuBot, LuMail, LuSearch, LuShieldCheck } from 'react-icons/lu'
 
 export const GITHUB_USER = 'xshshahab'
 
 export const profile = {
   name: 'Md Shahabuddin',
   navName: 'Syphar',
-  role: 'Full Stack Developer | React.js, TypeScript, Java, Spring Boot, Python (FastAPI), React Native',
-  bio: 'Full Stack Developer based in Gurgaon, India with ~2 years of experience building production web and Android apps with React, TypeScript and React Native, and backends with Java Spring Boot and Python (FastAPI). I own features end to end, from requirements and Figma prototypes to API development, testing and release.',
+  role: 'Agentic AI Engineer | Generative AI, LangGraph, LangChain, MCP, RAG, FastAPI, React, TypeScript',
+  bio: 'Agentic AI Engineer based in Gurgaon, India focused on Generative AI, LLM applications, and agentic workflows. I build production web and mobile products alongside AI-enabled business and analytics applications — hands-on with Python, FastAPI, LangChain, LangGraph, MCP, tool calling, RAG, and multi-provider LLMs, with frontend experience in React and TypeScript and backend experience in Python services and Java Spring Boot (Hibernate/JPA).',
   location: 'Gurgaon, Haryana, India',
   email: 'work.mdshahabuddin@gmail.com',
   // Falls back to the GitHub avatar. Drop a file at public/avatar.jpg and set this to '/avatar.jpg' to use your own photo.
@@ -48,95 +41,107 @@ export const navLinks = [
 export const companies = [
   {
     company: 'CodeCompass LLP',
-    role: 'Full Stack Developer',
+    role: 'Agentic AI Engineer',
     period: 'May 2025 – Present',
     status: 'current',
     projects: [
       {
-        name: 'Hurry2Shop — Admin Console',
-        date: 'May 2026 – Oct 2026',
+        name: 'Hurry2Shop — E-commerce Platform (Web, Admin & Android)',
+        date: 'Apr 2026 – Present',
         description:
-          'Internal admin app I built end to end: a React + Shadcn UI frontend with dashboard charts, and a Java Spring Boot backend with 19 REST endpoints across 4 controllers (campaigns, support inquiries, cart), Hibernate/JPA and PostgreSQL, documented in Swagger UI.',
+          'Production B2C e-commerce platform across customer website, internal Admin Console, and Android app. Owned the React + TypeScript Admin Console backed by 19 REST endpoints across 4 Spring Boot controllers with Hibernate/JPA and PostgreSQL (campaigns, support inquiries, cart workflows, Recharts dashboards). Built and published the React Native (Expo) Android app with product discovery, search, filters, wishlist, cart, checkout, OTP/JWT auth, Razorpay payments, and Docker deployment.',
         tech: [
           'React.js',
           'TypeScript',
-          'Shadcn UI',
-          'Redux Toolkit',
+          'React Native',
+          'Expo',
           'TanStack Query',
+          'Redux Toolkit',
           'Recharts',
           'Java',
           'Spring Boot',
           'Hibernate / JPA',
           'PostgreSQL',
-          'Swagger UI',
-          'Log4j',
+          'Razorpay',
+          'Docker',
         ],
-        domain: 'internal — no public URL',
-      },
-      {
-        name: 'Hurry2Shop — Android App',
-        date: 'Sep 2026 – Oct 2026',
-        description:
-          "Production e-commerce app for a women's ethnic-wear brand: browsing, search and filters, wishlist, cart, checkout and orders. OTP login with JWT, in-app Razorpay payments, and EAS release builds published on Google Play.",
-        tech: ['React Native', 'Expo', 'EAS Build', 'TypeScript', 'TanStack Query', 'Redux', 'Razorpay'],
-        href: 'https://play.google.com/store/apps/details?id=com.hurry2shop.app',
-        domain: 'play.google.com',
-      },
-      {
-        name: 'Hurry2Shop — Web Platform',
-        date: 'Apr 2026 – Oct 2026',
-        description:
-          "Customer-facing frontend of a B2C women's fashion platform, built with teammates: search and filtering, wishlist, cart, Razorpay checkout, orders and mobile-first layouts. Dockerized and live in production on a VPS since August 2026.",
-        tech: ['React.js', 'TypeScript', 'TanStack Query', 'Redux', 'Tailwind CSS', 'Razorpay', 'Docker'],
         href: 'https://hurry2shop.com',
         domain: 'hurry2shop.com',
+        secondaryHref: 'https://play.google.com/store/apps/details?id=com.hurry2shop.app',
+        secondaryLabel: 'google play',
       },
       {
-        name: 'WISE BI — Revenue Assurance Platform',
-        date: 'May 2025 – Present',
+        name: 'Billing & ERP Modernization — AI-Assisted Development and LLM Integration',
+        date: 'Dec 2025 – Apr 2026',
         description:
-          'Business Intelligence platform that helps telecom operators monitor and validate revenue data through interactive dashboards, data visualization, customizable reports and user management. Built in a 12-member Agile team.',
-        tech: ['React.js', 'TypeScript', 'Zustand', 'TanStack Query', 'Jest', 'Figma'],
+          'Modernized a legacy Java Swing billing and ERP application into a secure web app using an AI-assisted workflow with Claude Code and architect/developer agents while preserving existing business rules. Built a Spring Boot REST API, PostgreSQL data layer, and React/TypeScript frontend with RBAC, session/CSRF security, and audit logging. Developed HYSEN, a FastMCP business assistant exposing 34 read-only tools across 7 LLM providers (Gemini, OpenAI, Anthropic, Groq, Mistral, OpenRouter, Ollama) with prompt-injection safeguards and a SELECT-only DB role, alongside WhatsApp invoicing (Meta Cloud API), scheduled Telegram summaries, Docker Compose packaging, and 500+ backend, 1,000+ frontend, and 45 Python automated tests.',
+        tech: [
+          'Java',
+          'Spring Boot',
+          'PostgreSQL',
+          'React.js',
+          'TypeScript',
+          'FastMCP',
+          'MCP',
+          'Tool Calling',
+          'Multi-Provider LLMs',
+          'Claude Code',
+          'Docker Compose',
+          'JUnit',
+          'Vitest',
+          'pytest',
+        ],
       },
       {
-        name: 'Viba Insurance — Management Platform',
-        date: 'Oct 2025 – Nov 2025',
+        name: 'WISE BI — Revenue Assurance Platform & NL2SQL Analytics Assistant',
+        date: 'May 2025 – Nov 2025',
         description:
-          'Centralized admin dashboard for managing employee insurance policies, records and renewals — from requirements and UI prototypes to the finished frontend.',
-        tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
+          'Developed React/TypeScript frontend features for a telecom Revenue Assurance platform — including dashboards, data visualization, customizable reports, user management, and Zustand state integration — as part of a 12-member Agile team. Built an LLM-powered Natural Language to SQL (NL2SQL) assistant with schema-aware SQL generation using database metadata and business context, query validation, read-only execution, result interpretation, and a FastAPI + React/TypeScript interface with database access controls.',
+        tech: ['Python', 'FastAPI', 'NL2SQL', 'React.js', 'TypeScript', 'Zustand', 'PostgreSQL', 'REST APIs'],
       },
     ],
   },
   {
-    company: 'DataDimension LLP, Saudi Arabia',
+    company: 'DataDimension LLP',
     role: 'Frontend Developer Intern (Full-time, Remote)',
     period: 'Aug 2024 – Jan 2025',
     status: 'past',
     projects: [
       {
-        name: 'Tajweed — Accreditation Management (NCAAA, ABET)',
+        name: 'Tajweed — Accreditation Management System',
         date: 'Aug 2024 – Jan 2025',
         description:
-          'Accreditation system for Saudi higher-education institutions covering programs, learning outcomes, assessments, evidence documentation and reports. Also debugged UI and integration issues across modules to keep releases stable.',
-        tech: ['React.js', 'TypeScript', 'Redux', 'Tailwind CSS'],
+          'Developed frontend modules for Tajweed, an accreditation management system for Saudi higher-education institutions covering academic programs, learning outcomes, assessments, evidence, and reports. Handled requirements, prototype design, frontend implementation, REST API integration, and debugging UI and integration issues across modules.',
+        tech: ['React.js', 'TypeScript', 'Redux', 'Tailwind CSS', 'REST APIs'],
       },
     ],
   },
   {
-    company: 'Personal Projects',
+    company: 'Personal Project',
     role: 'Built and deployed solo',
     period: '',
     status: 'personal',
     projects: [
       {
-        name: 'SypharConnect — Full Stack Job Portal',
-        date: 'Oct – Nov 2026',
+        name: 'Sypharis One — Multi-Agent AI Travel Planner',
+        date: 'Personal Project',
         description:
-          'Job portal with 22 REST endpoints on FastAPI and PostgreSQL, JWT cookie auth and role-based access. Multi-filter search, saved and applied jobs, and a recruiter dashboard with a server-sanitised rich-text editor. Backed by 15 end-to-end tests and deployed behind Nginx with HTTPS and systemd.',
-        tech: ['Python', 'FastAPI', 'PostgreSQL', 'React.js', 'TypeScript', 'Redux Toolkit', 'Shadcn UI', 'JWT', 'Nginx', 'systemd'],
-        href: 'https://jobs.shahabuddin.in',
-        domain: 'jobs.shahabuddin.in',
-        secondaryHref: 'https://github.com/xshshahab/syphar-connect',
+          'Architected a 9-node stateful LangGraph workflow with an input guardrail and supervisor router dispatching specialist agents for flights, hotels, weather, and budget before itinerary generation. Implemented Human-in-the-Loop pause/resume with LangGraph interrupt() and PostgreSQL checkpointing (thread_id), integrated AviationStack, Tavily, and custom OpenWeather MCP servers with token-budget trimming, Groq rate-limit retries, and LangSmith tracing, and built a React 19/TypeScript UI with draft-versus-final plan comparison deployed via FastAPI, PostgreSQL, Nginx, and Docker Compose on an Ubuntu VPS with SSL.',
+        tech: [
+          'LangGraph',
+          'Python',
+          'FastAPI',
+          'PostgreSQL',
+          'MCP',
+          'LangSmith',
+          'React 19',
+          'TypeScript',
+          'Docker Compose',
+          'Nginx',
+        ],
+        href: 'https://travel.shahabuddin.in',
+        domain: 'travel.shahabuddin.in',
+        secondaryHref: 'https://github.com/xshshahab/sypharis-one',
         secondaryLabel: 'github',
       },
     ],
@@ -146,96 +151,75 @@ export const companies = [
 // "Courses" slot -> skills
 export const skills = [
   {
-    icon: SiJavascript,
-    title: 'Languages',
-    description: 'JavaScript (ES6+), TypeScript, Java, Python, SQL, HTML5 and CSS3.',
-    meta: 'JavaScript · TypeScript · Java · Python · SQL',
+    icon: SiGooglegemini,
+    title: 'Generative AI & LLMs',
+    description:
+      'LLM Application Development, OpenAI API, Google Gemini API, Anthropic Claude API, Multi-Provider Integration, Prompt Engineering, Function/Tool Calling, Structured Outputs, and Streaming Responses.',
+    meta: 'OpenAI · Gemini · Claude · Tool Calling',
+  },
+  {
+    icon: SiLangchain,
+    title: 'Agentic AI & Orchestration',
+    description:
+      'LangChain, LangGraph, Google ADK, AI Agents, Stateful Workflows, Human-in-the-Loop (HITL), MCP, FastMCP, and MCP Server/Client Integration.',
+    meta: 'LangChain · LangGraph · Google ADK · FastMCP',
+  },
+  {
+    icon: LuSearch,
+    title: 'RAG & Retrieval',
+    description:
+      'Retrieval-Augmented Generation (RAG), Corrective RAG (CRAG), OpenAI/Gemini Embeddings, FAISS, pgvector, Semantic Search, and Vector Retrieval.',
+    meta: 'RAG · CRAG · FAISS · pgvector',
+  },
+  {
+    icon: LuActivity,
+    title: 'Evaluation & Observability',
+    description: 'LangSmith, LLM Tracing, Workflow Debugging, and AI Workflow Evaluation.',
+    meta: 'LangSmith · Tracing · AI Evaluation',
+  },
+  {
+    icon: SiFastapi,
+    title: 'Backend & APIs',
+    description: 'Python, FastAPI, Pydantic, SQLAlchemy, REST APIs, and Java with Spring Boot and Hibernate/JPA.',
+    meta: 'Python · FastAPI · Java · Spring Boot',
   },
   {
     icon: SiReact,
     title: 'Frontend',
     description:
-      'React.js, Hooks, React Router, Tailwind CSS, Shadcn UI, Recharts for data visualization, and component-based SPAs with responsive design.',
-    meta: 'React · Tailwind · Shadcn UI · Recharts',
+      'React.js, React 19, TypeScript, JavaScript (ES6+), Redux Toolkit, TanStack Query, Zustand, Tailwind CSS, and shadcn/ui.',
+    meta: 'React 19 · TypeScript · TanStack Query · shadcn/ui',
   },
   {
-    icon: SiRedux,
-    title: 'State & Data Fetching',
-    description: 'Redux Toolkit, Zustand and TanStack Query for client and server state, with React Hook Form and Zod.',
-    meta: 'Redux Toolkit · Zustand · TanStack Query',
-  },
-  {
-    icon: SiExpo,
-    title: 'Mobile',
-    description: 'React Native with Expo, EAS Build, React Navigation and Google Play Console releases.',
-    meta: 'React Native · Expo · Android',
-  },
-  {
-    icon: SiSpringboot,
-    title: 'Backend',
+    icon: LuShieldCheck,
+    title: 'Data & Security',
     description:
-      'Java Spring Boot with Hibernate / JPA, and Python with FastAPI and SQLAlchemy. RESTful APIs in a layered controller–service–repository architecture.',
-    meta: 'Spring Boot · FastAPI · Python · REST',
-  },
-  {
-    icon: SiPostgresql,
-    title: 'Databases',
-    description: 'PostgreSQL, with SQL for querying and modelling data, and Alembic migrations.',
-    meta: 'PostgreSQL · SQL · Alembic',
-  },
-  {
-    icon: SiSwagger,
-    title: 'API Docs & Logging',
-    description: 'Documenting and testing every endpoint with Swagger UI (OpenAPI), and Log4j logging for debugging and tracing.',
-    meta: 'Swagger UI · OpenAPI · Log4j',
-  },
-  {
-    icon: SiJsonwebtokens,
-    title: 'Auth & Payments',
-    description: 'JWT and OTP authentication, role-based access control and the Razorpay payment gateway.',
-    meta: 'JWT · OTP · RBAC · Razorpay',
-  },
-  {
-    icon: SiJest,
-    title: 'Testing & Debugging',
-    description: 'Jest, React Testing Library, Vitest, MSW, pytest, Postman, Chrome DevTools, React Profiler and Lighthouse.',
-    meta: 'Jest · Vitest · MSW',
+      'PostgreSQL, SQL, Database Schema Design, Read-Only DB Access, JWT, OAuth 2.0, RBAC, CSRF Protection, and XSS Prevention.',
+    meta: 'PostgreSQL · JWT · OAuth 2.0 · RBAC',
   },
   {
     icon: SiDocker,
-    title: 'DevOps & Tools',
-    description: "Docker, Nginx, systemd, Let's Encrypt HTTPS and VPS deployment on Linux, with Git, Bitbucket, Jira and Figma.",
-    meta: 'Docker · Nginx · Linux',
-  },
-  {
-    icon: SiClaude,
-    title: 'AI-Assisted Development',
+    title: 'Testing & Delivery',
     description:
-      'Using Claude Code and Google Antigravity for debugging and refactoring while owning architecture and implementation.',
-    meta: 'Claude Code · Google Antigravity',
-  },
-  {
-    icon: LuListChecks,
-    title: 'Practices',
-    description: 'Agile teams, requirement gathering, UI prototyping, API integration, and debugging and bug fixing.',
-    meta: 'Agile · Jira · Figma',
+      'JUnit, Vitest, React Testing Library, pytest, Playwright, Postman, Swagger/OpenAPI, Docker, Docker Compose, AWS EC2/S3, Linux, Nginx, CI/CD, and Git.',
+    meta: 'JUnit · Vitest · pytest · Docker · AWS',
   },
 ]
 
 // Shown in the Skills section as a highlighted "learning" card
 export const learning = [
   {
-    icon: SiPython,
-    title: 'Python for AI Engineering',
+    icon: LuBot,
+    title: 'Agentic AI Systems, CRAG & Evaluation',
     description:
-      'Learning Python as the foundation for AI engineering — adding it to my JavaScript and TypeScript toolkit to build AI-powered applications. Applied so far in SypharConnect, a job portal with a FastAPI and PostgreSQL back end.',
-    since: 'Started Oct 2026',
+      'Deepening multi-agent orchestration with LangGraph and Google ADK, Corrective RAG pipelines with pgvector and FAISS, and systematic LLM workflow tracing and evaluation in LangSmith.',
+    since: 'Active focus',
   },
 ]
 
 export const education = {
   degree: 'Bachelor of Computer Applications (BCA)',
-  school: 'Maulana Mazharul Haque Arabic & Persian University',
+  school: 'Maulana Mazharul Haque Arabic & Persian University, Patna, Bihar',
   years: '2022 – 2025',
   detail: 'Percentage: 76%',
   languages: 'English, Hindi',
@@ -244,44 +228,41 @@ export const education = {
 
 // What's new feed, newest first. Add a line here to show it on the home page and /new.
 export const currentlyLearning = {
-  title: 'AI Engineering',
+  title: 'Agentic AI Systems, CRAG & Evaluation',
   description:
-    'I have started learning AI Engineering — building on my full-stack foundation in React, TypeScript and Python (FastAPI) to go from shipping apps to shipping AI-powered ones.',
-  since: 'Started Oct 2026',
+    'Building stateful multi-agent workflows with LangGraph, Google ADK, and MCP servers, Corrective RAG retrieval with pgvector and FAISS, and end-to-end LLM evaluation in LangSmith.',
+  since: 'Active focus',
 }
 
 export const updates = [
   {
-    date: 'Oct – Nov 2026',
+    date: 'Personal Project',
     tag: 'Shipped',
-    title: 'Deployed SypharConnect, a FastAPI job portal',
-    summary: 'Live on a Linux VPS behind Nginx with HTTPS, a systemd-managed FastAPI back end, PostgreSQL and nightly backups.',
-    href: 'https://jobs.shahabuddin.in',
+    title: 'Launched Sypharis One, a Multi-Agent AI Travel Planner',
+    summary:
+      '9-node stateful LangGraph workflow with HITL checkpointing, AviationStack/Tavily/OpenWeather MCP servers, LangSmith tracing, and a React 19 + FastAPI stack on Ubuntu VPS.',
+    href: 'https://travel.shahabuddin.in',
   },
   {
-    date: 'Oct 2026',
-    tag: 'Learning',
-    title: 'Started learning AI Engineering',
-    summary: 'Beginning a new chapter beyond full-stack web and mobile development.',
-  },
-  {
-    date: 'Oct 2026',
+    date: 'Apr 2026 – Present',
     tag: 'Shipped',
-    title: 'Built the Hurry2Shop Admin Console, full stack',
-    summary: 'React + Shadcn UI frontend and 19 Java Spring Boot REST endpoints on PostgreSQL, documented in Swagger UI.',
-  },
-  {
-    date: 'Sep – Oct 2026',
-    tag: 'Shipped',
-    title: 'Hurry2Shop Android app on Google Play',
-    summary: 'Built with React Native (Expo), released with EAS Build and a Google Play listing.',
-    href: 'https://play.google.com/store/apps/details?id=com.hurry2shop.app',
-  },
-  {
-    date: 'Aug 2026',
-    tag: 'Shipped',
-    title: 'Hurry2Shop web platform live in production',
-    summary: 'Dockerized React frontend running on a VPS with Razorpay checkout and OTP + JWT auth.',
+    title: 'Shipping Hurry2Shop across Web, Admin Console & Android',
+    summary:
+      'React + TypeScript Admin Console on 19 Spring Boot REST endpoints and a React Native (Expo) Android app published on Google Play with OTP/JWT auth and Razorpay payments.',
     href: 'https://hurry2shop.com',
+  },
+  {
+    date: 'Dec 2025 – Apr 2026',
+    tag: 'Shipped',
+    title: 'Delivered Billing & ERP Modernization and HYSEN AI Assistant',
+    summary:
+      'Modernized a legacy Java Swing ERP with Spring Boot, React/TypeScript, and HYSEN — a 34-tool FastMCP assistant supporting 7 LLM providers, WhatsApp invoicing, and 500+ backend, 1,000+ frontend, and 45 Python tests.',
+  },
+  {
+    date: 'May – Nov 2025',
+    tag: 'Shipped',
+    title: 'Built WISE BI Revenue Assurance & NL2SQL Analytics Assistant',
+    summary:
+      'Telecom Revenue Assurance dashboards in React/TypeScript paired with a schema-aware FastAPI NL2SQL assistant with read-only execution safeguards.',
   },
 ]
