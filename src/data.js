@@ -14,8 +14,8 @@ export const GITHUB_USER = 'xshshahab'
 export const profile = {
   name: 'Md Shahabuddin',
   navName: 'Syphar',
-  role: 'Agentic AI Engineer | Generative AI, LangGraph, LangChain, MCP, RAG, FastAPI, React, TypeScript',
-  bio: 'Agentic AI Engineer based in Gurgaon, India focused on Generative AI, LLM applications, and agentic workflows. I build production web and mobile products alongside AI-enabled business and analytics applications — hands-on with Python, FastAPI, LangChain, LangGraph, MCP, tool calling, RAG, and multi-provider LLMs, with frontend experience in React and TypeScript and backend experience in Python services and Java Spring Boot (Hibernate/JPA).',
+  role: 'AI Engineer | Gen AI, Agentic AI, LLMs, LangGraph, LangChain, MCP, RAG, FastAPI, React, TypeScript',
+  bio: 'AI Engineer based in Gurgaon, India focused on Generative AI, LLM applications, and agentic workflows. I build production web and mobile products alongside AI-enabled business and analytics applications — hands-on with Python, FastAPI, LangChain, LangGraph, MCP, tool calling, RAG, and multi-provider LLMs, with frontend experience in React and TypeScript and backend experience in Python services and Java Spring Boot (Hibernate/JPA).',
   location: 'Gurgaon, Haryana, India',
   email: 'work.mdshahabuddin@gmail.com',
   // Falls back to the GitHub avatar. Drop a file at public/avatar.jpg and set this to '/avatar.jpg' to use your own photo.
@@ -41,7 +41,7 @@ export const navLinks = [
 export const companies = [
   {
     company: 'CodeCompass LLP',
-    role: 'Agentic AI Engineer',
+    role: 'AI Engineer',
     period: 'May 2025 – Present',
     status: 'current',
     projects: [
@@ -96,8 +96,15 @@ export const companies = [
         name: 'WISE BI — Revenue Assurance Platform & NL2SQL Analytics Assistant',
         date: 'May 2025 – Nov 2025',
         description:
-          'Developed React/TypeScript frontend features for a telecom Revenue Assurance platform — including dashboards, data visualization, customizable reports, user management, and Zustand state integration — as part of a 12-member Agile team. Built an LLM-powered Natural Language to SQL (NL2SQL) assistant with schema-aware SQL generation using database metadata and business context, query validation, read-only execution, result interpretation, and a FastAPI + React/TypeScript interface with database access controls.',
-        tech: ['Python', 'FastAPI', 'NL2SQL', 'React.js', 'TypeScript', 'Zustand', 'PostgreSQL', 'REST APIs'],
+          'Developed React/TypeScript frontend features for a telecom Revenue Assurance platform — including dashboards, data visualization, customizable reports, user management, and Zustand state integration — as part of a 12-member Agile team. Built an LLM-powered Natural Language to SQL (NL2SQL) assistant with FastAPI, LangChain, and LangGraph featuring schema-aware SQL generation using database metadata and business context, query validation, read-only execution, result interpretation, and a React/TypeScript interface with database access controls.',
+        tech: ['Python', 'FastAPI', 'LangChain', 'LangGraph', 'NL2SQL', 'React.js', 'TypeScript', 'Zustand', 'PostgreSQL', 'REST APIs'],
+      },
+      {
+        name: 'Viba Insurance — Insurance Management Platform',
+        date: 'Oct 2025 – Nov 2025',
+        description:
+          'Built the frontend of a centralized insurance management dashboard for employee policies, records, and renewals — from requirements and Figma prototypes to React/TypeScript implementation.',
+        tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
       },
     ],
   },

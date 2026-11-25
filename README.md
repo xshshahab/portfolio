@@ -1,6 +1,6 @@
 # Syphar — Portfolio
 
-Personal portfolio of **Md Shahabuddin**, an Agentic AI Engineer building Generative AI, LLM applications, agentic workflows, and production web and mobile products with Python, FastAPI, LangGraph, LangChain, MCP, RAG, React, TypeScript, React Native, and Java Spring Boot.
+Personal portfolio of **Md Shahabuddin**, an AI Engineer building Generative AI, LLM applications, agentic workflows, and production web and mobile products with Python, FastAPI, LangGraph, LangChain, MCP, RAG, React, TypeScript, React Native, and Java Spring Boot.
 
 **Live:** [shahabuddin.in](https://shahabuddin.in)
 
